@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal page</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+        .goal-box {
+            margin: auto;
+            width: 40%;
+            background-color: whitesmoke;
+            padding: 10px;
+            margin-top: 50px;
+            border-radius: 25px;
+            min-width: 400px;
+        }
+
+        .target {
+            padding: 10px;
+            background-color: #3282B8;
+            border-radius: 15px;
+            padding-left: 30px;
+            margin: 10px
+        }
+
+        .target {
+            
+        }
+
+    </style>
+
 </head>
 <body>
     <!-- Header -->
@@ -23,16 +50,30 @@
         </ul>
     </div>
 
-    <h1>goal name</h1>
-    <p>description...</p>
-    <p>due date: dd-mm-yy</p>
+    <div class="goal-box">
 
-    <form class="target-form">
-        <input type="checkbox" name="targets" value="target 1">Target 1<br>
-        <input type="checkbox" name="targets" value="target 2">Target 2<br>
-        <input type="checkbox" name="targets" value="target 3">Target 3<br>
-        <input type="submit" value="Submit">
-    </form>
+        <div class="todo">
+            <h2>*name of goal*</name></h2>
+            *description*.................. .......................... ......... ............ ............. ...... ...
+            ... ......... ........... ..... ............. ...........  ......... ............ .... ..... ...
+            <br><br>due: dd-mm-yy<br>
+            <div class="target target 1">
+                <input type="checkbox" name="targets" value="target 1">Target 1 ..... ..... ....... ......... .......... ....... ....... ........ ....
+            </div>
+            <div class="target target 2">
+                <input type="checkbox" name="targets" value="target 2">Target 2 ......... .... .....
+            </div>
+            <div class="target target 3">
+                <input type="checkbox" name="targets" value="target 3">Target 3 ........ ......... ..... ...... ....... ... ... .... ..... .... .... ..... .... ..... ...... ....... ...... .... ....
+            </div>
+
+                <center>
+                <button class="create-new-target-button" href="creategoal.html">(+) Create New Target</button>
+                </center>
+        </div>
+    </div>
+
+
     
 </body>
 </html>
