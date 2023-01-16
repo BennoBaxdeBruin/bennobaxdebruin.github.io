@@ -8,8 +8,35 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+
+        .all-goals {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+        }
+
+        .all-goals ul {
+            list-style: none;
+        }
         
-        
+        .todo, .completed {
+            width: 20%;
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 25px;
+            min-width: 400px;
+            margin: 10px
+        }
+
+        .all-goals li div {
+            width: 70%;
+            height: 40px;
+            background-color: rgb(201, 201, 201);
+            border-radius: 25px;
+        }
 
     </style>
     
@@ -29,23 +56,30 @@
         </ul>
     </div>
 
+    <center><h1>Your Goals</h1></center>    
+    <hr style="background-color:black; height:5px">
 
-    <h1>Your Goals</h1> 
-    <div class="todo">
-        <h2>Goals to do</h2>
-        <ul>
-            <li>goal 1</li>
-            <li> goal 2</li>
-        </ul>
-    </div>
+    <div class="all-goals">
 
-    <div class="completed">
-        <h2>Completed goals</h2>
-        <ul>
-            <li>goal 1</li>
-            <li> goal 2</li>
-        </ul>
+        <div class="todo">
+            <h2>Goals to do</h2>
+            <ul>
+                <li><div>
+                    goal 1
+                </div></li>
+                <li> goal 2</li>
+            </ul>
+        </div>
+
+        <div class="completed">
+            <h2>Completed goals</h2>
+            <ul>
+                <li>goal 1</li>
+                <li> goal 2</li>
+            </ul>
+        </div>
     </div>
+    
     
 </body>
 </html>
