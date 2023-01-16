@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(169, 214, 229);
+    background-color: #BBE1FA;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 .header {
-    background-color: rgb(48, 48, 208);
+    background-color: #0F4C75;
     display: flex;
     justify-content: space-between;
     padding: 5px 50px;

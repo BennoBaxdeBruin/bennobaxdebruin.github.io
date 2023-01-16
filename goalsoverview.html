@@ -14,28 +14,48 @@
             justify-content: center;
             flex-wrap: wrap;
 
-
         }
 
         .all-goals ul {
             list-style: none;
+            align-self: center;
         }
         
         .todo, .completed {
-            width: 20%;
-            background-color: white;
+            background-color: whitesmoke;
             padding: 10px;
-            margin-top: 10px;
             border-radius: 25px;
             min-width: 400px;
             margin: 10px
         }
 
-        .all-goals li div {
-            width: 70%;
-            height: 40px;
-            background-color: rgb(201, 201, 201);
-            border-radius: 25px;
+        .goal {
+            min-height: 70px;
+            background-color: #3282B8;
+            border-radius: 15px;
+            padding-left: 30px;
+        }
+
+        .goal a, .create-new-goal a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .goal a:hover, .create-new-goal a:hover {
+            color: rgb(68, 68, 68);
+            transition-duration: .1s;
+        }
+
+        .completed .goal {
+            opacity: .5;
+        }
+
+        .create-new-goal {
+            background-color: black;
+            background-color: #3282B8;
+            border-radius: 15px;
+            padding-left: 30px;
+            padding: 10px
         }
 
     </style>
@@ -57,26 +77,39 @@
     </div>
 
     <center><h1>Your Goals</h1></center>    
-    <hr style="background-color:black; height:5px">
+    <hr style="background-color:#1B262C; height:5px">
 
     <div class="all-goals">
 
         <div class="todo">
             <h2>Goals to do</h2>
-            <ul>
-                <li><div>
-                    goal 1
-                </div></li>
-                <li> goal 2</li>
-            </ul>
+            <div class="goal">
+                <h3><a href="goal.html">Name of goal</a></h3> 
+                due date: dd-mm-yy
+            </div>
+            <div class="goal">
+                <h3><a href="goal.html">Name of goal</a></h3> 
+                due date: dd-mm-yy
+            </div>
+
+            <hr style="height: 3px; background-color: #1B262C">
+
+            <div class="create-new-goal">
+                <a href="creategoal.html">(+) Create New Goalie</a>
+            </div>
         </div>
 
         <div class="completed">
             <h2>Completed goals</h2>
-            <ul>
-                <li>goal 1</li>
-                <li> goal 2</li>
-            </ul>
+
+            <div class="goal">
+                <h3><a href="goal.html">Name of goal</a></h3> 
+                due date: dd-mm-yy
+            </div>
+            <div class="goal">
+                <h3><a href="goal.html">Name of goal</a></h3> 
+                due date: dd-mm-yy
+            </div>
         </div>
     </div>
     
