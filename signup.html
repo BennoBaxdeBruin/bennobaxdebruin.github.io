@@ -35,12 +35,27 @@
             <form>
                 <label for="username">Username*</label> 
                 <input type="text" id="username" name="username"><br>
-                <label class="under-label" for="username"></label>
+                <label class="under-label" for="username">
+                    The username must:
+                    <ul>
+                        <li>have 5 to 12 characters</li>
+                        <li>start with a capital letter</li>
+                        <li>end with a number or special character</li>
+                    </ul>
+                </label>
                 <br><br>
 
                 <label for="password">Password*</label>
                 <input type="password" id="password" name="password"><br>
-                <label class="under-label" for="password"></label>
+                <label class="under-label" for="password">
+                    The password must:
+                    <ul>
+                        <li>be at least 12 characters long</li>
+                        <li>contain at least one upper and  one lowecase letter</li>
+                        <li>contain at least one number</li>
+                        <li>conatain at least one sybmol</li>
+                    </ul>
+                </label>
                 <br><br>
 
                 <label for="name">Name*</label>
@@ -58,13 +73,13 @@
                 <label class="under-label" for="country"></label>
                 <br><br>
 
-                <label for="zipcode">Zipcode</label>
-                <input type="text" id="zipcode" name="zipcode"><br>
+                <label for="zipcode">ZIP code</label>
+                <input type="text" id="zipcode" name="zipcode" placeholder="1234AB"><br>
                 <label class="under-label" for="uszipcodeername"></label>
                 <br><br>
 
                 <label for="email">Email*</label>
-                <input type="text" id="email" name="email"><br>
+                <input type="text" id="email" name="email" placeholder="john.doe@email.com"><br>
                 <label class="under-label" for="email"></label>
                 <br><br>
 
