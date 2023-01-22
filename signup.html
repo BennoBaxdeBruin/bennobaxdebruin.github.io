@@ -3,6 +3,7 @@
 <head>
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <html>
 
@@ -21,18 +22,20 @@
     </div>
 
     <div class="login-box">
-        <form>
+        <form id="form">
             <h1>Signup</h1>
             already have an account? <a href="login.html">Log in.</a><br><br>
-
+            <div id="usernameError"></div>
             <p>username:</p>
             <input type="text" id="username" name="username">
             <br>
+            <div id="passwordError"></div>
             <p>password:</p>
             <input type="password" id="password" name="password">
             <br>
+            <div id="fullNameError"></div>
             <p>name:</p>
-            <input type="text" id="name" name="name">
+            <input type="text" id="fullName" name="fullName">
             <br>
             <p>address:</p>
             <input type="text" id="address" name="address">
@@ -40,9 +43,11 @@
             <p>country:</p>
             <input type="text" id="country" name="country">
             <br>
+            <div id="zipcodeError"></div>
             <p>zipcode:</p>
             <input type="text" id="zipcode" name="zipcode">
             <br>
+            <div id="emailError"></div>
             <p>email:</p>
             <input type="text" id="email" name="email">
             <br>
@@ -56,7 +61,7 @@
             <input type="text" id="bio" name="bio">
             <br>
             <br>
-            <button>Sign up</button>
+            <button type="submit">Sign up</button>
         </form>
     </div>
 
